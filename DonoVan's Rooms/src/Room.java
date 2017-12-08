@@ -23,7 +23,8 @@ public class Room {
 	private String [] riddlemed = {"What taste better than it smells?",
 									"What animal asks but never answers",
 									"What loses its head in the morning but gets it back at night"};
-	private String [] riddlehard = {
+	
+	private String [] riddlehard = {}
 	public void leaveRoom(Person x)
 	{
 		occupant = null;
