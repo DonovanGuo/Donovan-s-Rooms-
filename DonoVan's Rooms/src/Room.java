@@ -1,3 +1,5 @@
+import java.io.InputStream;
+import java.util.Random;
 
 public class Room {
 	Person occupant;
@@ -24,7 +26,12 @@ public class Room {
 									"What animal asks but never answers",
 									"What loses its head in the morning but gets it back at night"};
 	
-	private String [] riddlehard = {}
+	private String [] riddlehard = {"The more there is the less you see, what am I?","What is full of holes but can still hold water?"};
+	Random ra = new Random ();
+	String easyriddle = (riddleeasy[ra.nextInt(riddleeasy.length)]);
+	String medriddle = (riddlemed[ra.nextInt(riddlemed.length)]);
+	String hardriddle = (riddlehard[ra.nextInt(riddlehard.length)]);
+
 	public void leaveRoom(Person x)
 	{
 		occupant = null;
